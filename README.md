@@ -1,7 +1,7 @@
 # Corso_iOS
 Progetti di esempio per corso iOS base
 
-## Lezione 1 (16 novembre 2017)
+## Lezione 1 (ven 24 nov 2017)
 
     1.1 Introduzione iOS
     1.2 Panoramica XCode
@@ -14,7 +14,7 @@ Progetti di esempio per corso iOS base
 
     es1. Realizzazione di una semplice applicazione che utilizza assets
 
-## Lezione 2 (ven 24 nov 2017)
+## Lezione 2 (lun 11 dic 2017)
 
     2.1 UI Guidelines
     2.2 UIKit e componenti standard
@@ -25,7 +25,7 @@ Progetti di esempio per corso iOS base
     es2.a Migliorare l'applicazione es1 utilizzando i constranints
     es2.b Realizzazione di un'applicazione single view che utilizza constraints
 
-## Lezione 3 (lun 11 dic 2017)
+## Lezione 3
 
     3.1 Outlets e Actions
     3.2 UINavigationController
@@ -59,6 +59,8 @@ Progetti di esempio per corso iOS base
     6.2 Dispatching e code
     6.3 Introduzione a CoreData
     6.4 Utilizzo di CoreData
+    
+    4.a Appendice: Approfondimento Git
 
     es8. Setup di CoreData
 
