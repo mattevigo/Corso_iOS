@@ -3,6 +3,8 @@ Progetti di esempio per corso iOS base
 
 ## Lezione 1 (ven 24 nov 2017)
 
+    1.a La Programmazione Mobile
+
     1.1 Introduzione iOS
     1.2 Panoramica XCode
     1.3 Screen Resolutions
@@ -10,7 +12,7 @@ Progetti di esempio per corso iOS base
     1.5 Storyboard
     1.6 Utilizzare assets in IB
 
-    1.a Appendice: Introduzione a GIT
+    1.b Appendice: Introduzione a GIT
 
     es1. Realizzazione di una semplice applicazione che utilizza assets
 
