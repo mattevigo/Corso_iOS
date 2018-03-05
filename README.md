@@ -66,7 +66,7 @@ Progetti di esempio per corso iOS base
 
     es8. Setup di CoreData
 
-## Lezione 7 (mar 22 mar 2018 - Gabriele Cocco)
+## Lezione 7 (gio 22 mar 2018 - Gabriele Cocco)
 
     7.1 UITableView e UITableViewCell
     7.2 UITableViewDelegate e UITableDataSource
@@ -74,7 +74,7 @@ Progetti di esempio per corso iOS base
 
     es7. Realizzazione di un applicazione che utilizzi CoreData e table view
 
-## Lezione 8 (gio 27 mar 2018 - Matteo Vigoni)
+## Lezione 8 (mar 27 mar 2018 - Matteo Vigoni)
 
     8.1 Custom views
     8.2 Introduzione a CoreAnimations
