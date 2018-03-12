@@ -1,7 +1,9 @@
 # Corso_iOS
 Progetti di esempio per corso iOS base
 
-## Lezione 1 (ven 24 nov 2017)
+## Lezione 1 (ven 24 nov 2017 - Matteo Vigoni)
+
+    1.a La Programmazione Mobile
 
     1.1 Introduzione iOS
     1.2 Panoramica XCode
@@ -10,11 +12,11 @@ Progetti di esempio per corso iOS base
     1.5 Storyboard
     1.6 Utilizzare assets in IB
 
-    1.a Appendice: Introduzione a GIT
+    1.b Appendice: Introduzione a GIT
 
     es1. Realizzazione di una semplice applicazione che utilizza assets
 
-## Lezione 2 (lun 11 dic 2017)
+## Lezione 2 (mar 6 mar 2018 - Matteo Vigoni)
 
     2.1 UI Guidelines
     2.2 UIKit e componenti standard
@@ -25,7 +27,7 @@ Progetti di esempio per corso iOS base
     es2.a Migliorare l'applicazione es1 utilizzando i constranints
     es2.b Realizzazione di un'applicazione single view che utilizza constraints
 
-## Lezione 3
+## Lezione 3 (gio 8 mar 2018 - Matteo Vigoni)
 
     3.1 Outlets e Actions
     3.2 UINavigationController
@@ -33,7 +35,7 @@ Progetti di esempio per corso iOS base
 
     es3. Realizzazione di un applicazione utilizzando segue e navigation controller
 
-## Lezione 4
+## Lezione 4 (mar 13 mar 2018 - Gabriele Cocco)
 
     4.1 Il linguaggio ObjectiveC
     4.2 Playground
@@ -43,7 +45,7 @@ Progetti di esempio per corso iOS base
 
     es4. TODO
 
-## Lezione 5
+## Lezione 5 (gio 15 mar 2018 - Gabriele Cocco)
 
     5.1 Application delegate
     5.2 Introduzione a UIKit
@@ -53,7 +55,7 @@ Progetti di esempio per corso iOS base
 
     es5. Calcolatrice
 
-## Lezione 6
+## Lezione 6 (mar 20 mar 2018 - Gabriele Cocco)
 
     6.1 Metodi asincroni e main thread
     6.2 Dispatching e code
@@ -64,7 +66,7 @@ Progetti di esempio per corso iOS base
 
     es8. Setup di CoreData
 
-## Lezione 7
+## Lezione 7 (gio 22 mar 2018 - Gabriele Cocco)
 
     7.1 UITableView e UITableViewCell
     7.2 UITableViewDelegate e UITableDataSource
@@ -72,7 +74,7 @@ Progetti di esempio per corso iOS base
 
     es7. Realizzazione di un applicazione che utilizzi CoreData e table view
 
-## Lezione 8
+## Lezione 8 (mar 27 mar 2018 - Matteo Vigoni)
 
     8.1 Custom views
     8.2 Introduzione a CoreAnimations
