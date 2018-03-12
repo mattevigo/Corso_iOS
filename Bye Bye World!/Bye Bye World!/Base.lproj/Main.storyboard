@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lxN-Op-y2u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSJ-Jv-TBG">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.38371312619999998" green="0.65782350300000003" blue="0.91960376499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cl8-Yf-8j7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgC-X3-vdz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <color key="backgroundColor" red="0.38371312619999998" green="0.65782350300000003" blue="0.91960376499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="CFz-Gq-rak"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ND1-4h-fJk">
+                                <rect key="frame" x="0.0" y="150" width="375" height="457"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lEd-zJ-Kjf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZs-vc-4T3">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
+                                                <state key="normal" title="Bye Bye World!"/>
+                                                <connections>
+                                                    <segue destination="Ok2-eM-Ep7" kind="show" id="Zzo-ki-YJp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83349674439999999" green="1" blue="0.50782747809999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lEd-zJ-Kjf" secondAttribute="bottom" id="hbb-x0-SOu"/>
+                                    <constraint firstItem="lEd-zJ-Kjf" firstAttribute="top" secondItem="ND1-4h-fJk" secondAttribute="top" id="l6n-6P-MmN"/>
+                                    <constraint firstItem="lEd-zJ-Kjf" firstAttribute="leading" secondItem="ND1-4h-fJk" secondAttribute="leading" id="p3g-EE-f6J"/>
+                                    <constraint firstAttribute="trailing" secondItem="lEd-zJ-Kjf" secondAttribute="trailing" id="pzQ-A8-htG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="ND1-4h-fJk" firstAttribute="top" secondItem="VgC-X3-vdz" secondAttribute="bottom" id="MDZ-4L-aPg"/>
+                            <constraint firstItem="VgC-X3-vdz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MxK-ry-tQH"/>
+                            <constraint firstItem="ND1-4h-fJk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N4L-OT-EeK"/>
+                            <constraint firstItem="CSJ-Jv-TBG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QMD-57-aEm"/>
+                            <constraint firstItem="VgC-X3-vdz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XSB-UH-3Hc"/>
+                            <constraint firstItem="CSJ-Jv-TBG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ybr-kh-nB1"/>
+                            <constraint firstItem="ND1-4h-fJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="igQ-WM-XhG"/>
+                            <constraint firstItem="CSJ-Jv-TBG" firstAttribute="top" secondItem="ND1-4h-fJk" secondAttribute="bottom" id="ngg-Hf-6uu"/>
+                            <constraint firstItem="CSJ-Jv-TBG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pCr-lS-Cqb"/>
+                            <constraint firstItem="VgC-X3-vdz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xqh-xZ-wHF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qgW-PO-RML"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="128"/>
+        </scene>
+        <!--Bye Bye View Controller-->
+        <scene sceneID="IvZ-NG-3fQ">
+            <objects>
+                <viewController id="Ok2-eM-Ep7" customClass="ByeByeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8J-8a-mcN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="World" translatesAutoresizingMaskIntoConstraints="NO" id="cQd-l2-mFk">
+                                <rect key="frame" x="12.5" y="158.5" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cQd-l2-mFk" secondAttribute="height" multiplier="1:1" id="Kve-Z7-PLE"/>
+                                    <constraint firstAttribute="width" constant="350" id="cDn-pV-nLr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tesla" translatesAutoresizingMaskIntoConstraints="NO" id="jmP-Lz-cCQ">
+                                <rect key="frame" x="0.0" y="521" width="375" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jmP-Lz-cCQ" secondAttribute="height" multiplier="375:146" id="AtH-yl-rLL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.015854950994253159" green="0.0075939930975437164" blue="0.019994476810097694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cQd-l2-mFk" firstAttribute="centerX" secondItem="f8J-8a-mcN" secondAttribute="centerX" id="6sC-1S-XJL"/>
+                            <constraint firstItem="jmP-Lz-cCQ" firstAttribute="trailing" secondItem="Wiy-tE-v2e" secondAttribute="trailing" id="HmA-Dk-Pu8"/>
+                            <constraint firstItem="jmP-Lz-cCQ" firstAttribute="bottom" secondItem="Wiy-tE-v2e" secondAttribute="bottom" id="dDX-Pa-Mwb"/>
+                            <constraint firstItem="cQd-l2-mFk" firstAttribute="centerY" secondItem="f8J-8a-mcN" secondAttribute="centerY" id="lyB-KS-uzC"/>
+                            <constraint firstItem="jmP-Lz-cCQ" firstAttribute="leading" secondItem="Wiy-tE-v2e" secondAttribute="leading" id="xO1-ct-IO6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wiy-tE-v2e"/>
+                    </view>
+                    <connections>
+                        <outlet property="_worldWidthCnstraint" destination="cDn-pV-nLr" id="uKQ-Qx-hj2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AzU-bb-fmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191.2" y="120.98950524737631"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i9s-4O-BfW">
+            <objects>
+                <navigationController id="lxN-Op-y2u" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gLQ-3i-LHT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AfS-yJ-jWq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHi-1m-J2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352" y="774"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tesla" width="400" height="123"/>
+        <image name="World" width="400" height="400"/>
+    </resources>
+</document>
