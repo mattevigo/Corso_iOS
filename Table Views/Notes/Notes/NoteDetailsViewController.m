@@ -7,6 +7,7 @@
 //
 
 #import "NoteDetailsViewController.h"
+#import "NotesModel.h"
 
 @interface NoteDetailsViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
@@ -37,6 +38,7 @@
 }
 
 - (IBAction)close:(id)sender {
+    [[NotesModel sharedInstance] addNoteWithTitle:_titleTextField.text body:_bodyTextView.text];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

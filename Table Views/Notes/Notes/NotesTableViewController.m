@@ -10,6 +10,7 @@
 #import "Note+CoreDataClass.h"
 #import "AppDelegate.h"
 #import "NoteDetailsViewController.h"
+#import "NotesModel.h"
 
 #define CELL_ID_NOTE @"com.smatrfab.note.reuseId"
 #define SEGUE_NOTE_DETAILS @"showNoteDetailsPush"
@@ -23,7 +24,7 @@
 {
     NSManagedObjectContext *_context;
     AppDelegate *_appDelegate;
-    NSMutableArray<Note*> *_notesArr;
+    NSArray<Note*> *_notesArr;
     Note *_selectedNote;
 }
 
@@ -39,23 +40,12 @@
     _appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
     _context = _appDelegate.persistentContainer.viewContext;
     
-    _notesArr = [[NSMutableArray alloc] init];
-    _selectedNote = nil;
-    
-    // Test core data
-    Note *n = [[Note alloc] initWithContext:_context];
-    n.title = @"Test";
-    n.body = @"Body Test";
-    [_notesArr addObject:n];
-    
-    assert(n != nil && n.body != nil);
-    
-    n = [[Note alloc] initWithContext:_context];
-    n.title = @"Test 2";
-    n.body = @"Body Test 2";
-    [_notesArr addObject:n];
-    
-    assert(n != nil && n.body != nil);
+    _notesArr = [NotesModel sharedInstance].notes;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    _notesArr = [[NotesModel sharedInstance] notes];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

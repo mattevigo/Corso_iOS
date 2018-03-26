@@ -15,6 +15,7 @@
 		9F1CAF9B2068EBC900C761FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAF9A2068EBC900C761FD /* main.m */; };
 		9F1CAFA92068ED6300C761FD /* NotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAFA82068ED6300C761FD /* NotesTableViewController.m */; };
 		9F1CAFAC2068F73F00C761FD /* NoteDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAFAB2068F73F00C761FD /* NoteDetailsViewController.m */; };
+		9F1CAFAF2068FFB300C761FD /* NotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAFAE2068FFB300C761FD /* NotesModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		9F1CAFA82068ED6300C761FD /* NotesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesTableViewController.m; sourceTree = "<group>"; };
 		9F1CAFAA2068F73F00C761FD /* NoteDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteDetailsViewController.h; sourceTree = "<group>"; };
 		9F1CAFAB2068F73F00C761FD /* NoteDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteDetailsViewController.m; sourceTree = "<group>"; };
+		9F1CAFAD2068FFB300C761FD /* NotesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesModel.h; sourceTree = "<group>"; };
+		9F1CAFAE2068FFB300C761FD /* NotesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				9F1CAF992068EBC900C761FD /* Info.plist */,
 				9F1CAF9A2068EBC900C761FD /* main.m */,
 				9F1CAF912068EBC900C761FD /* Notes.xcdatamodeld */,
+				9F1CAFAD2068FFB300C761FD /* NotesModel.h */,
+				9F1CAFAE2068FFB300C761FD /* NotesModel.m */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				9F1CAFA92068ED6300C761FD /* NotesTableViewController.m in Sources */,
 				9F1CAF8A2068EBC900C761FD /* AppDelegate.m in Sources */,
 				9F1CAFAC2068F73F00C761FD /* NoteDetailsViewController.m in Sources */,
+				9F1CAFAF2068FFB300C761FD /* NotesModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
