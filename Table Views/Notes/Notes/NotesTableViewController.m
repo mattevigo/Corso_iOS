@@ -9,8 +9,10 @@
 #import "NotesTableViewController.h"
 #import "Note+CoreDataClass.h"
 #import "AppDelegate.h"
+#import "NoteDetailsViewController.h"
 
 #define CELL_ID_NOTE @"com.smatrfab.note.reuseId"
+#define SEGUE_NOTE_DETAILS @"showNotesDetailsModally"
 
 @interface NotesTableViewController ()
 
@@ -21,6 +23,7 @@
     NSManagedObjectContext *_context;
     AppDelegate *_appDelegate;
     NSMutableArray<Note*> *_notesArr;
+    Note *_selectedNote;
 }
 
 - (void)viewDidLoad {
@@ -36,6 +39,7 @@
     _context = _appDelegate.persistentContainer.viewContext;
     
     _notesArr = [[NSMutableArray alloc] init];
+    _selectedNote = nil;
     
     // Test core data
     Note *n = [[Note alloc] initWithContext:_context];
@@ -58,7 +62,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -115,14 +119,22 @@
 }
 */
 
-/*
+#pragma mark - UITableViewDelegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    _selectedNote = [_notesArr objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:SEGUE_NOTE_DETAILS sender:self];
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:SEGUE_NOTE_DETAILS]){
+        if([segue.destinationViewController isKindOfClass:[NoteDetailsViewController class]]){
+            [segue.destinationViewController setNote:_selectedNote];
+        }
+    }
 }
-*/
 
 @end

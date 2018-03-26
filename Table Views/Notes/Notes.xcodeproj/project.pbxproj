@@ -8,21 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		9F1CAF8A2068EBC900C761FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAF892068EBC900C761FD /* AppDelegate.m */; };
-		9F1CAF8D2068EBC900C761FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAF8C2068EBC900C761FD /* ViewController.m */; };
 		9F1CAF902068EBC900C761FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1CAF8E2068EBC900C761FD /* Main.storyboard */; };
 		9F1CAF932068EBC900C761FD /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAF912068EBC900C761FD /* Notes.xcdatamodeld */; };
 		9F1CAF952068EBC900C761FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1CAF942068EBC900C761FD /* Assets.xcassets */; };
 		9F1CAF982068EBC900C761FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1CAF962068EBC900C761FD /* LaunchScreen.storyboard */; };
 		9F1CAF9B2068EBC900C761FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAF9A2068EBC900C761FD /* main.m */; };
 		9F1CAFA92068ED6300C761FD /* NotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAFA82068ED6300C761FD /* NotesTableViewController.m */; };
+		9F1CAFAC2068F73F00C761FD /* NoteDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CAFAB2068F73F00C761FD /* NoteDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F1CAF852068EBC900C761FD /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1CAF882068EBC900C761FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F1CAF892068EBC900C761FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F1CAF8B2068EBC900C761FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F1CAF8C2068EBC900C761FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F1CAF8F2068EBC900C761FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F1CAF922068EBC900C761FD /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		9F1CAF942068EBC900C761FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +33,8 @@
 		9F1CAFA42068EC3A00C761FD /* Note+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Note+CoreDataProperties.m"; path = "Notes/Note+CoreDataProperties.m"; sourceTree = "<group>"; };
 		9F1CAFA72068ED6300C761FD /* NotesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesTableViewController.h; sourceTree = "<group>"; };
 		9F1CAFA82068ED6300C761FD /* NotesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesTableViewController.m; sourceTree = "<group>"; };
+		9F1CAFAA2068F73F00C761FD /* NoteDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteDetailsViewController.h; sourceTree = "<group>"; };
+		9F1CAFAB2068F73F00C761FD /* NoteDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +73,16 @@
 			children = (
 				9F1CAF882068EBC900C761FD /* AppDelegate.h */,
 				9F1CAF892068EBC900C761FD /* AppDelegate.m */,
-				9F1CAF8B2068EBC900C761FD /* ViewController.h */,
-				9F1CAF8C2068EBC900C761FD /* ViewController.m */,
+				9F1CAFA72068ED6300C761FD /* NotesTableViewController.h */,
+				9F1CAFA82068ED6300C761FD /* NotesTableViewController.m */,
+				9F1CAFAA2068F73F00C761FD /* NoteDetailsViewController.h */,
+				9F1CAFAB2068F73F00C761FD /* NoteDetailsViewController.m */,
 				9F1CAF8E2068EBC900C761FD /* Main.storyboard */,
 				9F1CAF942068EBC900C761FD /* Assets.xcassets */,
 				9F1CAF962068EBC900C761FD /* LaunchScreen.storyboard */,
 				9F1CAF992068EBC900C761FD /* Info.plist */,
 				9F1CAF9A2068EBC900C761FD /* main.m */,
 				9F1CAF912068EBC900C761FD /* Notes.xcdatamodeld */,
-				9F1CAFA72068ED6300C761FD /* NotesTableViewController.h */,
-				9F1CAFA82068ED6300C761FD /* NotesTableViewController.m */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -158,11 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1CAF8D2068EBC900C761FD /* ViewController.m in Sources */,
 				9F1CAF932068EBC900C761FD /* Notes.xcdatamodeld in Sources */,
 				9F1CAF9B2068EBC900C761FD /* main.m in Sources */,
 				9F1CAFA92068ED6300C761FD /* NotesTableViewController.m in Sources */,
 				9F1CAF8A2068EBC900C761FD /* AppDelegate.m in Sources */,
+				9F1CAFAC2068F73F00C761FD /* NoteDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
