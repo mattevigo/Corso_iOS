@@ -10,6 +10,8 @@
 #import "Note+CoreDataClass.h"
 #import "AppDelegate.h"
 
+#define CELL_ID_NOTE @"com.smatrfab.note.reuseId"
+
 @interface NotesTableViewController ()
 
 @end
@@ -18,6 +20,7 @@
 {
     NSManagedObjectContext *_context;
     AppDelegate *_appDelegate;
+    NSMutableArray<Note*> *_notesArr;
 }
 
 - (void)viewDidLoad {
@@ -32,10 +35,20 @@
     _appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
     _context = _appDelegate.persistentContainer.viewContext;
     
+    _notesArr = [[NSMutableArray alloc] init];
+    
     // Test core data
     Note *n = [[Note alloc] initWithContext:_context];
     n.title = @"Test";
     n.body = @"Body Test";
+    [_notesArr addObject:n];
+    
+    assert(n != nil && n.body != nil);
+    
+    n = [[Note alloc] initWithContext:_context];
+    n.title = @"Test 2";
+    n.body = @"Body Test 2";
+    [_notesArr addObject:n];
     
     assert(n != nil && n.body != nil);
 }
@@ -48,24 +61,25 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [_notesArr count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_NOTE];
     
     // Configure the cell...
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_ID_NOTE];
+    }
+    
+    cell.textLabel.text = [_notesArr objectAtIndex:indexPath.row].title;
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
