@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E06A87D720575554006183EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A87D620575554006183EB /* AppDelegate.m */; };
+		E06A87DD20575554006183EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06A87DB20575554006183EB /* Main.storyboard */; };
+		E06A87DF20575554006183EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06A87DE20575554006183EB /* Assets.xcassets */; };
+		E06A87E220575554006183EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06A87E020575554006183EB /* LaunchScreen.storyboard */; };
+		E06A87E520575554006183EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A87E420575554006183EB /* main.m */; };
+		E06A87EF20575554006183EB /* com_smartfab_hands_on_05_06_07Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A87EE20575554006183EB /* com_smartfab_hands_on_05_06_07Tests.m */; };
+		E06A87FA20575555006183EB /* com_smartfab_hands_on_05_06_07UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A87F920575555006183EB /* com_smartfab_hands_on_05_06_07UITests.m */; };
+		E06A88B9205ABF26006183EB /* MyFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A88B8205ABF26006183EB /* MyFirstViewController.m */; };
+		E06A88BC205AC959006183EB /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A88BB205AC959006183EB /* CanvasViewController.m */; };
+		E06A88C1205AC9B9006183EB /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A88BE205AC9B9006183EB /* Circle.m */; };
+		E06A88C2205AC9B9006183EB /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A88C0205AC9B9006183EB /* Rectangle.m */; };
+		E06A88C6205AE147006183EB /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A88C5205AE147006183EB /* FinalViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E06A87EB20575554006183EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E06A87CA20575554006183EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E06A87D120575554006183EB;
+			remoteInfo = "com.smartfab.hands-on-05-06-07";
+		};
+		E06A87F620575554006183EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E06A87CA20575554006183EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E06A87D120575554006183EB;
+			remoteInfo = "com.smartfab.hands-on-05-06-07";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E06A87D220575554006183EB /* com.smartfab.hands-on-05-06-07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "com.smartfab.hands-on-05-06-07.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06A87D520575554006183EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E06A87D620575554006183EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E06A87DC20575554006183EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E06A87DE20575554006183EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E06A87E120575554006183EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E06A87E320575554006183EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06A87E420575554006183EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E06A87EA20575554006183EB /* com.smartfab.hands-on-05-06-07Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "com.smartfab.hands-on-05-06-07Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06A87EE20575554006183EB /* com_smartfab_hands_on_05_06_07Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_smartfab_hands_on_05_06_07Tests.m; sourceTree = "<group>"; };
+		E06A87F020575554006183EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06A87F520575554006183EB /* com.smartfab.hands-on-05-06-07UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "com.smartfab.hands-on-05-06-07UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06A87F920575555006183EB /* com_smartfab_hands_on_05_06_07UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_smartfab_hands_on_05_06_07UITests.m; sourceTree = "<group>"; };
+		E06A87FB20575555006183EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06A88B7205ABF26006183EB /* MyFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFirstViewController.h; sourceTree = "<group>"; };
+		E06A88B8205ABF26006183EB /* MyFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFirstViewController.m; sourceTree = "<group>"; };
+		E06A88BA205AC959006183EB /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		E06A88BB205AC959006183EB /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		E06A88BD205AC9B9006183EB /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		E06A88BE205AC9B9006183EB /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		E06A88BF205AC9B9006183EB /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		E06A88C0205AC9B9006183EB /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		E06A88C3205ACC94006183EB /* ShapeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeDelegate.h; sourceTree = "<group>"; };
+		E06A88C4205AE147006183EB /* FinalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
+		E06A88C5205AE147006183EB /* FinalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E06A87CF20575554006183EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06A87E720575554006183EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06A87F220575554006183EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E06A87C920575554006183EB = {
+			isa = PBXGroup;
+			children = (
+				E06A87D420575554006183EB /* com.smartfab.hands-on-05-06-07 */,
+				E06A87ED20575554006183EB /* com.smartfab.hands-on-05-06-07Tests */,
+				E06A87F820575554006183EB /* com.smartfab.hands-on-05-06-07UITests */,
+				E06A87D320575554006183EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E06A87D320575554006183EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E06A87D220575554006183EB /* com.smartfab.hands-on-05-06-07.app */,
+				E06A87EA20575554006183EB /* com.smartfab.hands-on-05-06-07Tests.xctest */,
+				E06A87F520575554006183EB /* com.smartfab.hands-on-05-06-07UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E06A87D420575554006183EB /* com.smartfab.hands-on-05-06-07 */ = {
+			isa = PBXGroup;
+			children = (
+				E06A88C3205ACC94006183EB /* ShapeDelegate.h */,
+				E06A88BD205AC9B9006183EB /* Circle.h */,
+				E06A88BE205AC9B9006183EB /* Circle.m */,
+				E06A88BF205AC9B9006183EB /* Rectangle.h */,
+				E06A88C0205AC9B9006183EB /* Rectangle.m */,
+				E06A87D520575554006183EB /* AppDelegate.h */,
+				E06A87D620575554006183EB /* AppDelegate.m */,
+				E06A87DB20575554006183EB /* Main.storyboard */,
+				E06A87DE20575554006183EB /* Assets.xcassets */,
+				E06A87E020575554006183EB /* LaunchScreen.storyboard */,
+				E06A87E320575554006183EB /* Info.plist */,
+				E06A87E420575554006183EB /* main.m */,
+				E06A88B7205ABF26006183EB /* MyFirstViewController.h */,
+				E06A88B8205ABF26006183EB /* MyFirstViewController.m */,
+				E06A88BA205AC959006183EB /* CanvasViewController.h */,
+				E06A88BB205AC959006183EB /* CanvasViewController.m */,
+				E06A88C4205AE147006183EB /* FinalViewController.h */,
+				E06A88C5205AE147006183EB /* FinalViewController.m */,
+			);
+			path = "com.smartfab.hands-on-05-06-07";
+			sourceTree = "<group>";
+		};
+		E06A87ED20575554006183EB /* com.smartfab.hands-on-05-06-07Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E06A87EE20575554006183EB /* com_smartfab_hands_on_05_06_07Tests.m */,
+				E06A87F020575554006183EB /* Info.plist */,
+			);
+			path = "com.smartfab.hands-on-05-06-07Tests";
+			sourceTree = "<group>";
+		};
+		E06A87F820575554006183EB /* com.smartfab.hands-on-05-06-07UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E06A87F920575555006183EB /* com_smartfab_hands_on_05_06_07UITests.m */,
+				E06A87FB20575555006183EB /* Info.plist */,
+			);
+			path = "com.smartfab.hands-on-05-06-07UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E06A87D120575554006183EB /* com.smartfab.hands-on-05-06-07 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06A87FE20575555006183EB /* Build configuration list for PBXNativeTarget "com.smartfab.hands-on-05-06-07" */;
+			buildPhases = (
+				E06A87CE20575554006183EB /* Sources */,
+				E06A87CF20575554006183EB /* Frameworks */,
+				E06A87D020575554006183EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "com.smartfab.hands-on-05-06-07";
+			productName = "com.smartfab.hands-on-05-06-07";
+			productReference = E06A87D220575554006183EB /* com.smartfab.hands-on-05-06-07.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E06A87E920575554006183EB /* com.smartfab.hands-on-05-06-07Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06A880120575555006183EB /* Build configuration list for PBXNativeTarget "com.smartfab.hands-on-05-06-07Tests" */;
+			buildPhases = (
+				E06A87E620575554006183EB /* Sources */,
+				E06A87E720575554006183EB /* Frameworks */,
+				E06A87E820575554006183EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E06A87EC20575554006183EB /* PBXTargetDependency */,
+			);
+			name = "com.smartfab.hands-on-05-06-07Tests";
+			productName = "com.smartfab.hands-on-05-06-07Tests";
+			productReference = E06A87EA20575554006183EB /* com.smartfab.hands-on-05-06-07Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E06A87F420575554006183EB /* com.smartfab.hands-on-05-06-07UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06A880420575555006183EB /* Build configuration list for PBXNativeTarget "com.smartfab.hands-on-05-06-07UITests" */;
+			buildPhases = (
+				E06A87F120575554006183EB /* Sources */,
+				E06A87F220575554006183EB /* Frameworks */,
+				E06A87F320575554006183EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E06A87F720575554006183EB /* PBXTargetDependency */,
+			);
+			name = "com.smartfab.hands-on-05-06-07UITests";
+			productName = "com.smartfab.hands-on-05-06-07UITests";
+			productReference = E06A87F520575554006183EB /* com.smartfab.hands-on-05-06-07UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E06A87CA20575554006183EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Gabriele;
+				TargetAttributes = {
+					E06A87D120575554006183EB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E06A87E920575554006183EB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E06A87D120575554006183EB;
+					};
+					E06A87F420575554006183EB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E06A87D120575554006183EB;
+					};
+				};
+			};
+			buildConfigurationList = E06A87CD20575554006183EB /* Build configuration list for PBXProject "com.smartfab.hands-on-05-06-07" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E06A87C920575554006183EB;
+			productRefGroup = E06A87D320575554006183EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E06A87D120575554006183EB /* com.smartfab.hands-on-05-06-07 */,
+				E06A87E920575554006183EB /* com.smartfab.hands-on-05-06-07Tests */,
+				E06A87F420575554006183EB /* com.smartfab.hands-on-05-06-07UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E06A87D020575554006183EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06A87E220575554006183EB /* LaunchScreen.storyboard in Resources */,
+				E06A87DF20575554006183EB /* Assets.xcassets in Resources */,
+				E06A87DD20575554006183EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06A87E820575554006183EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06A87F320575554006183EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E06A87CE20575554006183EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06A88BC205AC959006183EB /* CanvasViewController.m in Sources */,
+				E06A87E520575554006183EB /* main.m in Sources */,
+				E06A88C1205AC9B9006183EB /* Circle.m in Sources */,
+				E06A87D720575554006183EB /* AppDelegate.m in Sources */,
+				E06A88B9205ABF26006183EB /* MyFirstViewController.m in Sources */,
+				E06A88C2205AC9B9006183EB /* Rectangle.m in Sources */,
+				E06A88C6205AE147006183EB /* FinalViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06A87E620575554006183EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06A87EF20575554006183EB /* com_smartfab_hands_on_05_06_07Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06A87F120575554006183EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06A87FA20575555006183EB /* com_smartfab_hands_on_05_06_07UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E06A87EC20575554006183EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E06A87D120575554006183EB /* com.smartfab.hands-on-05-06-07 */;
+			targetProxy = E06A87EB20575554006183EB /* PBXContainerItemProxy */;
+		};
+		E06A87F720575554006183EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E06A87D120575554006183EB /* com.smartfab.hands-on-05-06-07 */;
+			targetProxy = E06A87F620575554006183EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E06A87DB20575554006183EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06A87DC20575554006183EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E06A87E020575554006183EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06A87E120575554006183EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E06A87FC20575555006183EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E06A87FD20575555006183EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E06A87FF20575555006183EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK3G974E23;
+				INFOPLIST_FILE = "com.smartfab.hands-on-05-06-07/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartfab.com-smartfab-hands-on-05-06-07";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E06A880020575555006183EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK3G974E23;
+				INFOPLIST_FILE = "com.smartfab.hands-on-05-06-07/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartfab.com-smartfab-hands-on-05-06-07";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E06A880220575555006183EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK3G974E23;
+				INFOPLIST_FILE = "com.smartfab.hands-on-05-06-07Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartfab.com-smartfab-hands-on-05-06-07Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/com.smartfab.hands-on-05-06-07.app/com.smartfab.hands-on-05-06-07";
+			};
+			name = Debug;
+		};
+		E06A880320575555006183EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK3G974E23;
+				INFOPLIST_FILE = "com.smartfab.hands-on-05-06-07Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartfab.com-smartfab-hands-on-05-06-07Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/com.smartfab.hands-on-05-06-07.app/com.smartfab.hands-on-05-06-07";
+			};
+			name = Release;
+		};
+		E06A880520575555006183EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK3G974E23;
+				INFOPLIST_FILE = "com.smartfab.hands-on-05-06-07UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartfab.com-smartfab-hands-on-05-06-07UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "com.smartfab.hands-on-05-06-07";
+			};
+			name = Debug;
+		};
+		E06A880620575555006183EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK3G974E23;
+				INFOPLIST_FILE = "com.smartfab.hands-on-05-06-07UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartfab.com-smartfab-hands-on-05-06-07UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "com.smartfab.hands-on-05-06-07";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E06A87CD20575554006183EB /* Build configuration list for PBXProject "com.smartfab.hands-on-05-06-07" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06A87FC20575555006183EB /* Debug */,
+				E06A87FD20575555006183EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06A87FE20575555006183EB /* Build configuration list for PBXNativeTarget "com.smartfab.hands-on-05-06-07" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06A87FF20575555006183EB /* Debug */,
+				E06A880020575555006183EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06A880120575555006183EB /* Build configuration list for PBXNativeTarget "com.smartfab.hands-on-05-06-07Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06A880220575555006183EB /* Debug */,
+				E06A880320575555006183EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06A880420575555006183EB /* Build configuration list for PBXNativeTarget "com.smartfab.hands-on-05-06-07UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06A880520575555006183EB /* Debug */,
+				E06A880620575555006183EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E06A87CA20575554006183EB /* Project object */;
+}
