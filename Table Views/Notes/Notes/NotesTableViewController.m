@@ -12,7 +12,8 @@
 #import "NoteDetailsViewController.h"
 
 #define CELL_ID_NOTE @"com.smatrfab.note.reuseId"
-#define SEGUE_NOTE_DETAILS @"showNotesDetailsModally"
+#define SEGUE_NOTE_DETAILS @"showNoteDetailsPush"
+#define SEGUE_NOTE_DETAILS_NEW @"showNoteDetailsModally"
 
 @interface NotesTableViewController ()
 
