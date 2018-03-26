@@ -8,9 +8,12 @@
 
 #import "NotesModel.h"
 
+#import <os/log.h>
+
 @implementation NotesModel
 {
     NSMutableArray<Note *> *_notesArr;
+    os_log_t _log;
 }
 
 +(NotesModel *) sharedInstance{
@@ -49,6 +52,8 @@
     [_notesArr addObject:n];
     
     assert(n != nil && n.body != nil);
+    
+    _log = os_log_create("com.smartfab.notes", "NotesModel");
 }
 
 -(NSArray<Note *> *)notes{
@@ -61,6 +66,7 @@
     newNote.body = body;
     
     [_notesArr addObject:newNote];
+    os_log_info(_log, "note added");
 }
 
 @end

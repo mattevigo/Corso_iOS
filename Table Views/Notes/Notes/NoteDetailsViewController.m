@@ -9,6 +9,8 @@
 #import "NoteDetailsViewController.h"
 #import "NotesModel.h"
 
+#import <os/log.h>
+
 @interface NoteDetailsViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
@@ -16,19 +18,26 @@
 @end
 
 @implementation NoteDetailsViewController
+{
+    os_log_t _log;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _log = os_log_create("com.smartfab.notes", "NoteDetailsViewController");
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     if(_note){
+        os_log_info(_log, "view appear (details mode)");
+        
         _titleTextField.text = _note.title;
         _bodyTextView.text = _note.body;
     }
     else{
         //TODO
+        os_log_info(_log, "view appear (insert mode)");
     }
 }
 
@@ -39,6 +48,8 @@
 
 - (IBAction)close:(id)sender {
     [[NotesModel sharedInstance] addNoteWithTitle:_titleTextField.text body:_bodyTextView.text];
+    os_log_info(_log, "new note saved");
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

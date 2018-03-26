@@ -12,6 +12,8 @@
 #import "NoteDetailsViewController.h"
 #import "NotesModel.h"
 
+#import <os/log.h>
+
 #define CELL_ID_NOTE @"com.smatrfab.note.reuseId"
 #define SEGUE_NOTE_DETAILS @"showNoteDetailsPush"
 #define SEGUE_NOTE_DETAILS_NEW @"showNoteDetailsModally"
@@ -26,9 +28,11 @@
     AppDelegate *_appDelegate;
     NSArray<Note*> *_notesArr;
     Note *_selectedNote;
+    os_log_t _log;
 }
 
 - (void)viewDidLoad {
+    os_log_debug(_log, "view will appear");
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -41,9 +45,12 @@
     _context = _appDelegate.persistentContainer.viewContext;
     
     _notesArr = [NotesModel sharedInstance].notes;
+    
+    _log = os_log_create("com.smartfab.notes", "NotesTableViewController");
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    os_log_debug(_log, "view will appear");
     _notesArr = [[NotesModel sharedInstance] notes];
     [self.tableView reloadData];
 }
@@ -64,6 +71,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    os_log_info(_log, "cell selected %@", indexPath);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_NOTE];
     
     // Configure the cell...
