@@ -108,10 +108,10 @@
         NSArray* arr = [[NSUserDefaults standardUserDefaults] objectForKey:@"SAVED_SHAPES"];
         for(NSDictionary* el in arr) {
             if(el[@"radius"]) {
-                [self didFinishAddingCircleWithX:[el[@"x"] intValue] andY:[el[@"y"] intValue] andRadius:[el[@"radius"] intValue]];
+                [vc didFinishAddingCircleWithX:[el[@"x"] intValue] andY:[el[@"y"] intValue] andRadius:[el[@"radius"] intValue]];
             }
             else {
-                [self didFinishAddingRectangleWithX:[el[@"x"] intValue] andY:[el[@"y"] intValue] andWidth:[el[@"width"] intValue] andHeight:[el[@"height"] intValue]];
+                [vc didFinishAddingRectangleWithX:[el[@"x"] intValue] andY:[el[@"y"] intValue] andWidth:[el[@"width"] intValue] andHeight:[el[@"height"] intValue]];
             }
         }
     }
